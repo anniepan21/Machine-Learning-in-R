@@ -1,4 +1,6 @@
 ### Lab – Chapter 6 Forecasting Numeric Data – Regression Methods Lab Part 1 -----------------------------------------------------------------
+### The purpose of this lab is to se the linear regression methods
+### to identify any correlation between the target feature “meditation” and other features
 
 ### read data
 mydata <- read.csv("IDRecord-Meditation.csv")
@@ -32,6 +34,8 @@ summary(m4)
 
 
 ### Lab – Chapter 6 Forecasting Numeric Data – Regression Methods Lab Part 2 -------------------------------------------------------------------
+### The purpose of this lab is to use the regression tree methods to develop a model that
+### distinguishes between meditation and talking states.
 library(rpart)
 library(gmodels)
 

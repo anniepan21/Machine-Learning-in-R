@@ -1,4 +1,4 @@
-### Lab – Chapter 6 Forecasting Numeric Data – Regression Methods Lab Part 1 -----------------------------------------------------------------
+### Lab â€“ Chapter 6 Forecasting Numeric Data â€“ Regression Methods Lab Part 1 -----------------------------------------------------------------
 
 ### read data
 mydata <- read.csv("IDRecord-Meditation.csv")
@@ -14,12 +14,12 @@ m <- lm(meditation~attention, data = mydata)
 ### summary of the trained model
 summary(m)
 
-### add a squared term of “attention” to the model
+### add a squared term of â€œattentionâ€ to the model
 mydata$attention2 <- mydata$attention^2
 m2 <- lm(meditation ~ attention + attention2, data = mydata)
 summary(m2)
 
-### multiple linear regression analysis using “attention”, “eegRawValue”, and “blinkStrength” as independent variables 
+### multiple linear regression analysis using â€œattentionâ€, â€œeegRawValueâ€, and â€œblinkStrengthâ€ as independent variables 
 m3 <- lm(meditation ~ attention + eegRawValue + blinkStrength, data = mydata)
 
 ### show summary
@@ -31,7 +31,7 @@ m4 <- lm(meditation ~ . , data = mydata)
 summary(m4)
 
 
-### Lab – Chapter 6 Forecasting Numeric Data – Regression Methods Lab Part 2 -------------------------------------------------------------------
+### Lab â€“ Chapter 6 Forecasting Numeric Data â€“ Regression Methods Lab Part 2 -------------------------------------------------------------------
 library(rpart)
 library(gmodels)
 
